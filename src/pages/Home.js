@@ -24,8 +24,8 @@ function Home() {
   const handleSubmit = (event) => {
     event.preventDefault();
     switch (password) {
-        case "tartthegame" :
-            corectPassword('tartthegame')
+        case "startthegame" :
+            corectPassword('startthegame')
         break;
         case "senha":
             corectPassword(2)
