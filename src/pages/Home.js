@@ -29,9 +29,12 @@ function Home() {
         case "startthegame" :
             corectPassword('startthegame')
         break;
-        case "senha":
-            corectPassword(2)
+        case "470":
+            corectPassword(470)
         break;
+        case "110":
+          corectPassword(110)
+      break;
    default :
       setIsPasswordCorrect(false);
       setIsGifVisible(true);
