@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './home.css';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
   const [password, setPassword] = useState('');
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
   const [isGifVisible, setIsGifVisible] = useState(false);
@@ -16,7 +18,7 @@ function Home() {
     setTimeout(() => {
         setIsRedirecting(true);
         setTimeout(() => {
-            window.location.href = `desafio${desafio}`;
+          navigate(`desafio${desafio}`);
         }, 2000);
     }, 2000);
   }
