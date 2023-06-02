@@ -11,7 +11,7 @@ function App() {
       <div className="home">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/desafioSTARTTHEGAME" element={<Desafio1 />} />
+          <Route exact path="/desafiostartthegame" element={<Desafio1 />} />
        
         </Routes>
       </div>
