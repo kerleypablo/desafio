@@ -28,13 +28,13 @@ function Desafio1() {
       {showChallenge && (
         <div className="challenge">
           <p className="typing-animation">No cenário urbano de trajetos incertos,<br />
-            Uma cifra oculta entre marcos e desertos.<br />
+            Um codigo oculta entre marcos e desertos.<br />
             No instante em que o destino se revelou,<br />
             Um lugar único onde nossa história começou.<br />
             <br />
             Decifre o enigma, persiga as pistas,<br />
             Qual é o algarismo que o encontro registra?<br />
-            Na combinação cifrada, desvende o valor,<br />
+            Na combinação numerica, desvende o valor,<br />
             O número secreto que revela o local do nosso ardor.</p>
         </div>
       )}
