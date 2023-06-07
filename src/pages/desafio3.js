@@ -24,8 +24,17 @@ function Desafio3() {
       <button onClick={handleShowChallenge}>Mostrar Desafio</button>
       {showChallenge && (
         <div className="challenge">
-          <p className="typing-animation">link ou mandar me procurara<br />
-            </p>
+          <p className="typing-animation">"
+          Você é um aventureiro corajoso e destemido, conhecido por desbravar terras desconhecidas em busca de tesouros lendários. <br />
+          Recentemente, você ouviu falar de um artefato antigo de poder inimaginável escondido em um castelo misterioso, nas profundezas de uma floresta sombria e perigosa.<br />
+          Motivado pela promessa de grandeza e pelo desejo de proteger o mundo de um mal iminente, você parte em uma jornada perigosa em direção ao castelo.<br />
+           O caminho até lá é repleto de desafios e enigmas, projetados para afastar os mais fracos de espírito.<br />
+          Cada escolha pode levar a perigos desconhecidos ou a recompensas valiosas. Você precisa estar alerta, <br />
+          confiar em seu instinto e habilidades para fazer as escolhas certas e chegar ao seu objetivo final.<br />
+          Seu objetivo é encontrar o mago que habita o castelo e derrotá-lo em uma batalha épica.<br />
+          Somente ao vencer o mago maligno você poderá obter o artefato lendário e garantir que ele não caia em mãos erradas.<br />
+          <br /> a senha para o proximo portao é "RPG"<br />
+          </p>
         </div>
       )}
     </div>

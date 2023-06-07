@@ -6,6 +6,8 @@ import Desafio1 from './pages/desafio1';
 import Desafio2 from './pages/desafio2';
 import Labirinto from './pages/labirinto';
 import Desafio3 from './pages/desafio3';
+import Desafio4 from './pages/desafio4';
+import Desafio5 from './pages/desafio5';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/desafio470" element={<Desafio2 />} />
           <Route exact path="/desafio110" element={<Labirinto />} />
           <Route exact path="/desafioibis" element={<Desafio3 />} />
+          <Route exact path="/desafioRPG" element={<Desafio4 />} />
+          <Route exact path="/desafio250" element={<Desafio5 />} />
        
         </Routes>
       </div>

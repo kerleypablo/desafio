@@ -35,6 +35,15 @@ function Home() {
         case "110":
           corectPassword(110)
       break;
+      case "ibis":
+        corectPassword("ibis")
+    break;
+    case "250":
+        corectPassword(250)
+    break;
+      case "RPG":
+        corectPassword("RPG");
+    break;
    default :
       setIsPasswordCorrect(false);
       setIsGifVisible(true);
