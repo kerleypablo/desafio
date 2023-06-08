@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { useState } from "react";
 import "./desafio4.css";
 
@@ -431,26 +432,6 @@ const GamePage = () => {
                                                       setConversation("Opção inválida. Tente novamente!");
                                                     }
                                                     break;
-                                                     case 21.3:
-                                                if (answer === "1" && mata) {
-                                                    let damage = Math.floor(Math.random() * 10) + 11 + 5;
-                                                    if(arma){ damage += 10}
-                                                    setbosfinal(bossfinal - damage);
-                                                    let damagecaract = Math.floor(Math.random() * 10) + 15;
-                                                    setCharacterHelth(carctherHelth - damagecaract)
-                                                  setConversation(`voce difere o primeiro ataque enquanto ele esta desprevinido dano ${damage} porem ele revida e te da um ano de ${damagecaract} voce ataca(1)  foge(2) sua vida: ${carctherHelth}`);
-                                                  setStage(22);
-                                                  setAnswer("");
-                                                } else if (answer === "2" && mata) {
-                                                    let damagecaract = Math.floor(Math.random() * 10) + 15;
-                                                    setCharacterHelth(carctherHelth - damagecaract)
-                                                    setConversation(`voce chamou a atenção do mago , ele se assuta e ja lança um golpe que nao consegue nem desviar com dano ${damagecaract} sua vida: ${carctherHelth} voce ataca(1) foge(2)`);
-                                                    setStage(22);
-                                                    setAnswer("");
-                                                } else {
-                                                  setConversation("Opção inválida. Tente novamente!");
-                                                }
-                                                break;
                                                 case 23:
                                                     if (answer === "1" && mata) {
                                                       setConversation(`voce pega o pergaminho e nele esta escrito :
