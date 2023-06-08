@@ -42,7 +42,7 @@ function Home() {
         corectPassword(250)
     break;
       case "RPG":
-        corectPassword('RPG');
+        corectPassword('RPG')
     break;
    default :
       setIsPasswordCorrect(false);
