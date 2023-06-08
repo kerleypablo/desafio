@@ -5,7 +5,6 @@ const GamePage = () => {
   const [character, setCharacter] = useState("");
   const [conversation, setConversation] = useState("");
   const [stage, setStage] = useState(1);
-  const [musicLink, setMusicLink] = useState("");
   const [answer, setAnswer] = useState("");
   const [deserto, setDeserto] = useState(false);
   const [mata, setmata] = useState(false);
