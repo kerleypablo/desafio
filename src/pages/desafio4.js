@@ -5,7 +5,6 @@ const GamePage = () => {
   const [character, setCharacter] = useState("");
   const [conversation, setConversation] = useState("");
   const [stage, setStage] = useState(1);
-  const [musicLink, setMusicLink] = useState("");
   const [answer, setAnswer] = useState("");
   const [deserto, setDeserto] = useState(false);
   const [mata, setmata] = useState(false);
@@ -493,11 +492,6 @@ const GamePage = () => {
         <div className="game-content">
           <h2>Bem-vindo(a), {character}!</h2>
           <p>{conversation}</p>
-          {musicLink !== "" && (
-            <div className="music-link">
-              <a href={musicLink} target="_blank" rel="noopener noreferrer">Clique aqui para ouvir a música de vitória</a>
-            </div>
-          )}
           {stage !== 26 && (
             <div className="answer-input">
               <input type="text" value={answer} onChange={handleAnswerChange} placeholder="Digite o número da sua resposta" />
