@@ -36,7 +36,7 @@ function Home() {
           corectPassword(110)
       break;
       case "ibis":
-        corectPassword("ibis")
+        corectPassword('ibis')
     break;
     case "250":
         corectPassword(250)
