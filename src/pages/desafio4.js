@@ -158,8 +158,8 @@ const GamePage = () => {
                       setCharacterHelth(90)
                       setAnswer("");
                     } else if (answer === "2" && mata) {
-                        setConversation("voce nao guarda o totem e e segue seu caminho , e segue em frente porem escuta barulhos estranhos na mata , voce segue (1) ou volta(2)");
-                        setStage(7);// fazer caminho dezzerto 
+                        setConversation("voce consegue se esquivar sem dano , voce ataca (1) ou foge(2)");
+                        setStage(13);// fazer caminho dezzerto 
                       setAnswer("");
                     } else {
                       setConversation("Opção inválida. Tente novamente!");
@@ -258,8 +258,8 @@ const GamePage = () => {
                                             break;
                                             case 16.7:
                                                 if (answer === "1" && mata) {
-                                                  setConversation(`voce coloca sua mao e se sente mais forte como se sua vida tivesse maior , voce recebe mais 100 de vida , tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
-                                                  setCharacterHelth(carctherHelth + 100)
+                                                  setConversation(`voce coloca sua mao e se sente mais forte como se sua vida tivesse maior , voce recebe mais 150 de vida , tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
+                                                  setCharacterHelth(carctherHelth + 150)
                                                   setStage(16.4);
                                                   setAnswer("");
                                                 } else if (answer === "2" && mata) {
@@ -304,8 +304,8 @@ const GamePage = () => {
                                           setStage(17);
                                           setAnswer("");
                                         } else if (answer === "2" && mata) {
-                                            setConversation("voce encontra um outro objeto brilhante que te cura +50 hp segue(2)");
-                                            setCharacterHelth(carctherHelth + 50)
+                                            setConversation("voce encontra um outro objeto brilhante que te cura +80 hp segue(2)");
+                                            setCharacterHelth(carctherHelth + 80)
                                             setStage(19);
                                             setAnswer("");
                                         } else {
@@ -314,8 +314,9 @@ const GamePage = () => {
                                         break;
                                     case 19:
                                     if (answer === "1" && mata) {
-                                      setConversation("voce pegou sua arma que lhe concede mais 10 de poder , e so te resta seguir em frnte(1)");
+                                      setConversation("voce pegou sua arma que lhe concede mais 10 de poder e 50 de hp, e so te resta seguir em frnte(1)");
                                       setArma(true);
+                                      setCharacterHelth(carctherHelth +50);
                                       setStage(20);
                                       setAnswer("");
                                     } else if (answer === "2" && mata) {
@@ -350,7 +351,7 @@ const GamePage = () => {
                                             break;
                                             case 21.2:
                                                 if (answer === "1" && mata) {
-                                                  setConversation("voce entra na porta laterale ve mago  de costa segurando um pergaminho, oque voce esta buscando, ele nao percebe sua presença voce ataca(1) chama atenção(2)");
+                                                  setConversation("voce entra na porta lateral ve mago  de costa segurando um pergaminho, oque voce esta buscando, ele nao percebe sua presença voce ataca(1) chama atenção(2)");
                                                   setStage(21.3);
                                                   setAnswer("");
                                                 } else if (answer === "2" && mata) {
@@ -363,7 +364,7 @@ const GamePage = () => {
                                                 break;
                                                 case 21.3:
                                                 if (answer === "1" && mata) {
-                                                    let damage = Math.floor(Math.random() * 10) + 11 + 5;
+                                                    let damage = Math.floor(Math.random() * 10) + 15 + 5;
                                                     if(arma){ damage += 10}
                                                     setbosfinal(bossfinal - damage);
                                                     let damagecaract = Math.floor(Math.random() * 10) + 15;
