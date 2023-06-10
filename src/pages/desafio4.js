@@ -246,7 +246,7 @@ const GamePage = () => {
                                         case 16.4:
                                             if (answer === "1" && mata) {
                                               setConversation(`vose se deparou com um muro bem grande, com uma porta bem pequena como se fosse uma entrada lateral de um grande castelo voce entra(1) da volta(2)`);
-                                              setStage(16.5);
+                                              setStage(21.2);
                                               setAnswer("");
                                             } else if (answer === "2" && mata) {
                                                 setConversation("voce se depara com um pedra preta parecendo um cristal em pe , e nela tem um buraco onde suspostamente se encaixa alguma coisa voce coloca mao(1) , coloca totem(2)");
@@ -258,7 +258,7 @@ const GamePage = () => {
                                             break;
                                             case 16.7:
                                                 if (answer === "1" && mata) {
-                                                  setConversation(`voce coloca sua mao e se sente masi forte como se sua vida tivesse maior , voce recebe mais 100 de vida , tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
+                                                  setConversation(`voce coloca sua mao e se sente mais forte como se sua vida tivesse maior , voce recebe mais 100 de vida , tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
                                                   setCharacterHelth(carctherHelth + 100)
                                                   setStage(16.4);
                                                   setAnswer("");
@@ -288,7 +288,7 @@ const GamePage = () => {
                                     case 17:
                                     if (answer === "1" && mata) {
                                       setConversation("voce se depara com uma bifurcação voce vai para direita(1) esquerda(2)");
-                                      setStage(20);
+                                      setStage(17.1);
                                       setAnswer("");
                                     } else if (answer === "2" && mata) {
                                         setConversation("no caminho voce encotra arma aparentemente bem forte voce pega(1) larga pra la(2)");
@@ -298,6 +298,20 @@ const GamePage = () => {
                                       setConversation("Opção inválida. Tente novamente!");
                                     }
                                     break;
+                                    case 17.1:
+                                        if (answer === "1" && mata) {
+                                          setConversation("adiante voce percbe um brilho logo a frente seguir(2)");
+                                          setStage(17);
+                                          setAnswer("");
+                                        } else if (answer === "2" && mata) {
+                                            setConversation("voce encontra um outro objeto brilhante que te cura +50 hp");
+                                            setCharacterHelth(carctherHelth + 50)
+                                            setStage(19);
+                                            setAnswer("");
+                                        } else {
+                                          setConversation("Opção inválida. Tente novamente!");
+                                        }
+                                        break;
                                     case 19:
                                     if (answer === "1" && mata) {
                                       setConversation("voce pegou sua arma que lhe concede mais 10 de poder , e so te resta seguir em frnte(1)");
