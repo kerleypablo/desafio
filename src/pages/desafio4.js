@@ -12,7 +12,7 @@ const GamePage = () => {
   const [totem, setToten] = useState(false);
   const [carctherHelth, setCharacterHelth] = useState(120)
   const [boss1, setboss1] = useState(100);
-  const [bossfinal, setbosfinal] = useState(200);
+  const [bossfinal, setbosfinal] = useState(150);
   const[arma, setArma] = useState(true);
 
   const handleCharacterSelection = (selectedCharacter) => {
