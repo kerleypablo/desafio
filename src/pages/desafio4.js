@@ -258,8 +258,10 @@ const GamePage = () => {
                                             break;
                                             case 16.7:
                                                 if (answer === "1" && mata) {
-                                                  setConversation(`voce coloca sua mao e se sente mais forte como se sua vida tivesse maior , voce recebe mais 150 de vida , tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
-                                                  setCharacterHelth(carctherHelth + 150)
+                                                  setConversation(`voce coloca sua mao e se sente mais forte como se sua vida tivesse maior e o totem brilha como se estivesse esvaziando , voce recebe mais 250 de vida e um poder extra 10, tenta colocar o totem e nada acontece , em segui segue o caminho(1)`);
+                                                  setCharacterHelth(carctherHelth + 250)
+                                                  setArma(true)
+                                                  totem(false)
                                                   setStage(16.4);
                                                   setAnswer("");
                                                 } else if (answer === "2" && mata) {
