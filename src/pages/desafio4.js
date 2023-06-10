@@ -304,7 +304,7 @@ const GamePage = () => {
                                           setStage(17);
                                           setAnswer("");
                                         } else if (answer === "2" && mata) {
-                                            setConversation("voce encontra um outro objeto brilhante que te cura +50 hp");
+                                            setConversation("voce encontra um outro objeto brilhante que te cura +50 hp segue(2)");
                                             setCharacterHelth(carctherHelth + 50)
                                             setStage(19);
                                             setAnswer("");
@@ -319,7 +319,7 @@ const GamePage = () => {
                                       setStage(20);
                                       setAnswer("");
                                     } else if (answer === "2" && mata) {
-                                        setConversation("voce seguiu em frente e so lhe resta mata e nada mais , voce so segue emfrente(1)");
+                                        setConversation("voce seguiu em frente e so lhe resta mata a dentro e nada mais , voce so segue emfrente(1)");
                                         setStage(20);
                                         setAnswer("");
                                     } else {
@@ -489,7 +489,7 @@ const GamePage = () => {
           <p>{conversation}</p>
           {stage !== 26 && (
             <div className="answer-input">
-              <input type="text" value={answer} onChange={handleAnswerChange} placeholder="Digite o número da sua resposta" />
+              <input type="text" value={answer} onChange={handleAnswerChange} autoFocus placeholder="Digite o número da sua resposta" />
               <button onClick={handleConversation}>Enviar</button>
             </div>
           )}
