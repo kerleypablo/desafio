@@ -409,8 +409,8 @@ const GamePage = () => {
                                                             let damage = Math.floor(Math.random() * 10) + 11;
                                                             let texto= ''
                                                             let texto2= ''
-                                                            let damagecaract = Math.floor(Math.random() * 10) + 15;
-                                                            if(arma){ damage += 10}
+                                                            let damagecaract = Math.floor(Math.random() * 10) + 11;
+                                                            if(arma){ damage += 15}
                                                             if (acerto < 10 ) {
                                                                 texto ='voce errou'
                                                             }  else if ( acerto > 10 && acerto < 30) {
